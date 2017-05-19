@@ -36,14 +36,7 @@ friend class Iterator;
 class List
 {
 public:
-   /**
-      Constructs an empty list;
-   */
    List();
-   /**
-      Appends an element to the list.
-      @param s the value to append
-   */
    List(const List& right);
    ~List();
    List& operator=(const List& right);
