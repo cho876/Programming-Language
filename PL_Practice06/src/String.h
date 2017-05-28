@@ -35,11 +35,11 @@ String operator+(const String& left, const String& right);
 String operator+(char left, const String& right);
 ostream& operator<<(ostream& out, const String& str);
 
-bool operator<(const String& left, const String& right);
-bool operator<=(const String& left, const String& right);
-bool operator==(const String& left, const String& right);
-bool operator!=(const String& left, const String& right);
-bool operator>=(const String& left, const String& right);
+bool operator<(const String& left, const String& right);     //  < operator 추가 overloading
+bool operator<=(const String& left, const String& right);    // <= operator 추가 overloading
+bool operator==(const String& left, const String& right);    // == operator 추가 overloading
+bool operator!=(const String& left, const String& right);    // != operator 추가 overloading
+bool operator>=(const String& left, const String& right);    // >= operator 추가 overloading
 bool operator>(const String& left, const String& right);
 
 #endif /* MY_STRING_H_ */

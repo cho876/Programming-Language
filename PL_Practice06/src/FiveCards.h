@@ -22,10 +22,10 @@ private:
 
 };
 bool operator<(const FiveCards& left, const FiveCards& right);
-bool operator<=(const FiveCards& left, const FiveCards& right);
-bool operator==(const FiveCards& left, const FiveCards& right);
-bool operator!=(const FiveCards& left, const FiveCards& right);
-bool operator>=(const FiveCards& left, const FiveCards& right);
+bool operator<=(const FiveCards& left, const FiveCards& right);    // <= operator 추가 overloading
+bool operator==(const FiveCards& left, const FiveCards& right);    // == operator 추가 overloading
+bool operator!=(const FiveCards& left, const FiveCards& right);    // != operator 추가 overloading
+bool operator>=(const FiveCards& left, const FiveCards& right);    // >= operator 추가 overloading
 bool operator>(const FiveCards& left, const FiveCards& right);
 
 ostream& operator<<(ostream& out, const FiveCards& value);

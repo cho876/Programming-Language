@@ -125,27 +125,27 @@ ostream& operator<<(ostream& sout, const String& s) {
 	return s.outstr(sout);
 }
 
-bool operator<(const String& left, const String& right)
+bool operator<(const String& left, const String& right)     // < operator 추가 overloading
 {
 	return left.compare(right) < 0;
 }
 
-bool operator<=(const String& left, const String& right)
+bool operator<=(const String& left, const String& right)    // <= operator 추가 overloading
 		{
 	return left.compare(right) <= 0;
 		}
 
-bool operator==(const String& left, const String& right)
+bool operator==(const String& left, const String& right)    // == operator 추가 overloading
 		{
 	return left.compare(right) == 0;
 		}
 
-bool operator!=(const String& left, const String& right)
+bool operator!=(const String& left, const String& right)    // != operator 추가 overloading
 		{
 	return left.compare(right) != 0;
 		}
 
-bool operator>=(const String& left, const String& right)
+bool operator>=(const String& left, const String& right)    // >= operator 추가 overloading
 		{
 	return left.compare(right) >= 0;
 		}

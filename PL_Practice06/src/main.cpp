@@ -115,7 +115,7 @@ void selSortR (List<T>& L) {
 }
 
 template <typename T>
-void quickSort (List<T>& L)
+void quickSort (List<T>& L)   // QuickSort Template
 {
 	int n = L.size();
 	if (n < 2)

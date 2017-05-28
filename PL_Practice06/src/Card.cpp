@@ -65,20 +65,22 @@ ostream& operator<<(ostream& out, const Card& card)
 	return out;
 }
 
-int Card::compare(const Card& right) const {
-	int lrank, rrank;
-	int lsuit, rsuit;
+int Card::compare(const Card& right) const {     // Card compare (1순위: suig(문양), 2순위: rank(숫자))
+	int lrank, rrank;          // rank(숫자) 비교를 위한 변수
+	int lsuit, rsuit;          // suit(문양) 비교를 위한 변수
 
-	lrank = rank;
-	rrank = right.rank;
+	lrank = rank;              // 자신의 rank(숫자)를 lrank에 저장
+	rrank = right.rank;        // 비교 대상의 rank(숫자)를 rrank에 저장
 
-	lsuit = suit;
-	rsuit = right.suit;
-	int diff = lrank - rrank;
-	int _diff = lsuit - rsuit;
-	if(_diff == 0)
+	lsuit = suit;              // 자신의 suit(문양)을 lsuit에 저장
+	rsuit = right.suit;        // 비교 대상의 suit(문양)을 rsuit에 저장
+
+	int diff = lrank - rrank;   // 자신과 비교 대상의 rank(숫자) 비교 결과를 diff에 저장
+	int _diff = lsuit - rsuit;     // 자신과 비교 대상의 suit(문양) 비교 결과를 _diff에 저장
+
+	if(_diff == 0)              // 문양이 같을 경우 rank(숫자)의 비교 결과인 diff를 반환
 		return diff;
-	else
+	else                        // 문양이 다를 경우 suit(문양)의 비교 결과인 _diff를 반환
 		return _diff;
 }
 
